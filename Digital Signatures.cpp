@@ -12,7 +12,6 @@ int gcd(int a, int b) {
     return a;
 }
 
-// Function to calculate modular exponentiation (base^exp % mod)
 int modExp(int base, int exp, int mod) {
     int result = 1;
     base = base % mod;
@@ -26,7 +25,6 @@ int modExp(int base, int exp, int mod) {
     return result;
 }
 
-// Function to calculate the modular multiplicative inverse
 int modInverse(int e, int phi) {
     for (int d = 1; d < phi; d++) {
         if ((e * d) % phi == 1) {
