@@ -31,7 +31,7 @@ int modInverse(int e, int phi) {
             return d;
         }
     }
-    return -1; // No modular inverse found
+    return -1;
 }
 
 int main() {
