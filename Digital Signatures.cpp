@@ -35,7 +35,7 @@ int modInverse(int e, int phi) {
 }
 
 int main() {
-    // Step 1: Key Generation
+
     int p = 61, q = 53; // Two prime numbers
     int n = p * q;      // Modulus
     int phi = (p - 1) * (q - 1); // Euler's totient function
@@ -50,7 +50,6 @@ int main() {
     cout << "Public Key (e, n): (" << e << ", " << n << ")" << endl;
     cout << "Private Key (d, n): (" << d << ", " << n << ")" << endl;
 
-    // Step 2: Signing a Message
     int message;
     cout << "Enter a message to sign (as a number): ";
     cin >> message;
